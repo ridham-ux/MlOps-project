@@ -47,5 +47,5 @@ accuracy=acc*100
 print("Accuracy of the model is =",accuracy)
 
 file=open("/cnndata/output.txt","w")
-file.write(accuracy)
+file.write(str(int(accuracy)))
 file.close
