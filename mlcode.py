@@ -43,4 +43,9 @@ model.compile( optimizer = adam(lr=0.01), loss='categorical_crossentropy', metri
 
 trained_model=model.fit(X_train, y_train_cat, epochs=1, validation_data=(X_test,y_test))
 acc=trained_model.history['accuracy'][-1:][0]
-print(acc)
+accuracy=acc*100
+print("Accuracy of the model is =",accuracy)
+
+file=open("/cnndata/output.txt","w")
+file.write(accuracy)
+file.close
