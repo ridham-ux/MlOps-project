@@ -48,4 +48,5 @@ print("Accuracy of the model is =",accuracy)
 
 file=open("/cnndata/output.txt","w")
 file.write(str(int(accuracy)))
-file.close
+file.close()
+print("saved successfully in output.txt file")
