@@ -30,7 +30,7 @@ for i in range(i):
 	n=n*2
 model.add(MaxPooling2D(pool_size=(2, 2)))
 model.add(Flatten())
-model.add(Dense(units=20, activation='relu'))
+model.add(Dense(units=40, activation='relu'))
 model.add(Dense(units=10, activation='softmax'))
 model.summary()
 model.compile( optimizer = adam(lr=0.01), loss='categorical_crossentropy', metrics=['accuracy'])
