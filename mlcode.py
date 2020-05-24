@@ -26,7 +26,7 @@ from keras.optimizers import adam
 model = Sequential()
 i=1
 n=6
-for i in range(i)
+for i in range(i):
 	model.add(Convolution2D(filters=n, 
                           kernel_size=(3,3), 
                           activation='relu',
