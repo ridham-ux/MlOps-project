@@ -24,13 +24,15 @@ from keras.layers import Dense
 from keras.models import Sequential
 from keras.optimizers import adam
 model = Sequential()
-n=4
-model.add(Convolution2D(filters=n, 
-                        kernel_size=(3,3), 
-                        activation='relu',
-                   input_shape=(28,28,1)
-                       ))
-
+i=1
+n=6
+for i in range(i)
+	model.add(Convolution2D(filters=n, 
+                          kernel_size=(3,3), 
+                          activation='relu',
+                          input_shape=(28,28,1)
+                           ))
+n=n*2
 model.add(MaxPooling2D(pool_size=(2, 2)))
 
 model.add(Flatten())
