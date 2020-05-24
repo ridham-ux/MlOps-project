@@ -20,7 +20,7 @@ from keras.models import Sequential
 from keras.optimizers import adam
 model = Sequential()
 i=1
-n=4
+n=6
 for i in range(i):
 	model.add(Convolution2D(filters=n, 
                           kernel_size=(3,3), 
